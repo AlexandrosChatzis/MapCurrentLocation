@@ -243,14 +243,52 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng Thessaloniki = new LatLng(40.6436100, 22.9308600);
+
+        /*LatLng Thessaloniki = new LatLng(40.6436100, 22.9308600);
         mMap.addMarker(new MarkerOptions().position(Thessaloniki).title("Marker in Thessaloniki"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Thessaloniki, 5));
 
         LatLng Serres = new LatLng(41.0849900, 23.5475700);
         mMap.addMarker(new MarkerOptions().position(Serres).title("Marker in Serres"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Serres, 5));
+*/
+
+                //MAGAZIA
+
+
+        LatLng Mammas_pizza = new LatLng(40.268508, 22.501781);
+        mMap.addMarker(new MarkerOptions().position(Mammas_pizza).title("Mammas pizza"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Mammas_pizza, 15));
+
+        LatLng Family = new LatLng(37.963928, 23.648268);
+        mMap.addMarker(new MarkerOptions().position(Family).title("Family"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Family, 15));
+
+        LatLng Coffee_island = new LatLng(41.089990, 23.548625);
+        mMap.addMarker(new MarkerOptions().position(Coffee_island).title("Coffee_island"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Coffee_island, 15));
+
+        LatLng Kaliteros = new LatLng(41.088124, 23.548523);
+        mMap.addMarker(new MarkerOptions().position(Kaliteros).title("Kaliteros"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Kaliteros, 15));
+
+        LatLng Astoria = new LatLng(40.691612, 21.681245);
+        mMap.addMarker(new MarkerOptions().position(Astoria).title("Astoria"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Astoria, 15));
+
+        LatLng Erateino = new LatLng(41.089392, 23.545757);
+        mMap.addMarker(new MarkerOptions().position(Erateino).title("Erateino"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Erateino, 15));
+
+        LatLng Dimosthenis = new LatLng(41.090035, 23.548703);
+        mMap.addMarker(new MarkerOptions().position(Dimosthenis).title("Dimosthenis"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Dimosthenis, 15));
+
+
+
+
+
+
 
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
